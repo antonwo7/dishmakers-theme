@@ -1,0 +1,94 @@
+/*
+Theme Name: Hestia Child Theme
+Theme URI: https://wp-themes.com/hestia
+Author: ChildThemeWP.com
+Author URI: https://childthemewp.com
+Description: My WordPress Hestia child theme.
+Template: hestia
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Version: 1.0.0
+Text Domain: hestia-child
+*/
+.card-product>.card-image{
+	display:contents;
+}
+ul.products.columns-3.slick-initialized.slick-slider.slick-dotted{
+	display:block;
+}
+button.slick-prev.slick-arrow{
+	margin-top:-110px !important;
+}
+button.slick-next.slick-arrow{
+	margin-top:-110px !important;
+}
+
+@media (min-width:768px){
+	ul.product_list_widget {
+    display: inline-flex;
+	    list-style: none;
+}
+ul.product_list_widget img {
+    width: 180px;
+	margin:0 auto;
+}
+ul.product_list_widget li {
+    padding-right: 61px;
+    width: 33%;
+    padding-left: 61px;
+}
+a.wcfm_dashboard_item_title{
+	margin-left:70px;
+}
+.wcfmmp-store-rating {
+    margin-left: 55px;
+}
+	.store-data {
+    margin-top: 235px;
+}
+	#wcfmmp-stores-wrap ul.wcfmmp-store-wrap li .store-data .wcfmmp-store-rating{
+		margin:0 auto;
+	}
+	#wcfmmp-stores-wrap ul.wcfmmp-store-wrap li .store-footer .store-avatar{
+		top: -81px;
+    width: 150px;
+    height: 150px;
+	}
+}
+@media (max-width:500px){
+	ul.product_list_widget {
+    display: block;
+	    list-style: none;
+}
+	.wcfmmp-store-rating {
+    margin-left: 55px;
+}
+.product_list_widget img {
+    width: 60px;
+	margin:0 auto;
+}
+}
+.elementor-widget-wp-widget-wcfmmp-store-top-rated-vendors
+	ul.product_list_widget li {
+		width:100%;
+}
+#wcpscwc-product-slider-3 .slick-track{
+	transform:translate3d(0px, 0px, 0px)
+}
+
+.woocommerce .quantity select.qty.select-css {
+	-webkit-appearance: listbox;
+    -moz-appearance: listbox;
+    appearance: listbox;
+    width: 100%;
+    padding: 11px;
+    margin-right: 2px;
+}
+
+.select2-selection__rendered span.dishmaker_dropdown_tags {
+    display: none;
+}
+
+.select2-results__option span.dishmaker_dropdown_tags {
+	font-size: smaller;color: #827f7f;
+}

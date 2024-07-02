@@ -1,0 +1,114 @@
+.vendor-item {
+  .item {
+    .item-image {
+      border-bottom: 3px solid #17a2b8;
+
+      img {
+        object-fit: cover;
+        object-position: center;
+        height: 200px;
+        width: 100%;
+        border-radius: 6px 6px 0 0;
+      }
+    }
+
+    .item-footer {
+      border-radius: 0 0 6px 6px;
+      background: #fff;
+      padding: 40px 10px 20px;
+      text-align: center;
+      position: relative;
+
+      .item-title {
+        margin-bottom: 10px;
+
+        a {
+          color: #000;
+          font-weight: 600;
+          text-decoration: none;
+          font-size: 20px;
+        }
+      }
+
+      .item-icon {
+        width: 75px;
+        height: 75px;
+        top: -50px;
+        left: 10px;
+        padding: 6px;
+        background: #fff;
+        border-radius: 50%;
+        border: 1px solid #efefef;
+        position: absolute;
+
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+        }
+      }
+
+      .item-button {
+        top: 10px;
+        right: 10px;
+        position: absolute;
+        padding: 0 10px;
+        height: 30px;
+        line-height: 30px;
+        text-transform: uppercase;
+        border: #f0f0f0 1px solid;
+        border-bottom: 1px solid #17a2b8;
+        box-shadow: 0 1px 0 #ccc;
+        text-decoration: none;
+        background: #fff;
+        color: #17a2b8;
+        border-radius: 5px;
+        display: block;
+        font-size: 14px;
+        font-weight: 700;
+
+        &:hover {
+          background: #404040;
+        }
+      }
+
+      .item-stars {
+        position: relative;
+        height: 1.618em;
+        line-height: 1.618;
+        font-family: 'Font Awesome 5 Free' !important;
+        font-weight: 900;
+        width: 6em;
+        margin: 0 auto;
+
+        &:before {
+          color: #47525d;
+          content: "" "" "" "" "";
+          opacity: .25;
+          float: left;
+          top: 0;
+          left: 50%;
+          position: absolute;
+          transform: translateX(-50%);
+        }
+
+        span {
+          overflow: hidden;
+          float: left;
+          top: 0;
+          left: 0;
+          position: absolute;
+          padding-top: 1.5em;
+
+          &:before {
+            content: "" "" "" "" "";
+            top: 0;
+            position: absolute;
+            left: 0;
+            color: #FF912C;
+          }
+        }
+      }
+    }
+  }
+}

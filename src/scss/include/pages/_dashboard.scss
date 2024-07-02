@@ -1,0 +1,92 @@
+.instructions-steps{
+  .instr-item{
+    display:flex;
+    width:100%;
+    .item-step{
+      text-align: left;
+      white-space: nowrap;
+      margin-right:20px;
+      line-height: 30px;
+      span{
+        &:after{
+          content:'1';
+          margin-left:5px;
+        }
+
+      }
+    }
+    .item-wrapper{
+      width:100%;
+      .title{
+        padding: 0;
+        input{
+          padding:0 15px;
+          height:30px;
+          line-height: 30px;
+          background-color: #fff!important;
+          border: 1px solid #ccc!important;
+          border-radius: 3px;
+          box-shadow: 1px 1px 5px 0 #e9e9e9;
+        }
+      }
+      .description{
+        textarea{
+          background-color: #fff!important;
+          border: 1px solid #ccc!important;
+          border-radius: 3px;
+          box-shadow: 1px 1px 5px 0 #e9e9e9;
+          padding:10px 15px 0;
+
+        }
+      }
+    }
+    .close{
+      width:60px;
+      cursor: pointer;
+      position:relative;
+     &:before {
+        content: '';
+        background: #000;
+        width: 22px;
+        height: 1px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-45deg);
+        transition: .5s;
+      }
+      &:after {
+        content: '';
+        background: #000;
+        width: 22px;
+        height: 1px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+        transition: .5s;
+      }
+
+      &:hover{
+        &:before {
+          transform: translate(-50%, -50%) rotate(135deg);
+        }
+        &:after {
+          transform: translate(-50%, -50%) rotate(225deg);
+        }
+      }
+    }
+
+    @for $i from 1 through 20 {
+      &:nth-child(#{$i}){
+        .item-step{
+          span{
+            &:after{
+              content:'#{$i}';
+            }
+          }
+        }
+      }
+    }
+  }
+}

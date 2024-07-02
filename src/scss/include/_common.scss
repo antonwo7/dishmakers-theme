@@ -1,0 +1,54 @@
+body{
+
+}
+
+.page-header{
+  &.header-small{
+    .container{
+      padding:109px 0 50px !important;
+      @include media-breakpoint-down(md) {
+        padding: 99px 0 25px !important;
+      }
+      @include media-breakpoint-down(sm) {
+        //padding: 55px 0 25px !important;
+      }
+    }
+  }
+}
+
+
+
+@media (min-width: 769px){
+  .navbar.hestia_left .title-logo-wrapper {
+    min-width: 150px;
+  }
+}
+@include media-breakpoint-down(md) {
+  .nav>li>a {
+    padding: 10px 7px;
+  }
+  .navbar .navbar-nav > li {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .page-header{
+    .col-md-10{
+      width:100% !important;
+      max-width:100% !important;
+      flex: 0 0 100%;
+    }
+  }
+  body.admin-bar .navbar.navbar-not-transparent {
+    margin-top: 45px !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #wpadminbar {
+    position: fixed !important;
+  }
+}
+
+.broken_link, a.broken_link{
+  text-decoration: none !important;
+}

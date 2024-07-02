@@ -1,0 +1,23 @@
+.products-carousel{
+  margin-bottom: 40px;
+  .list-header{
+    padding:30px 0;
+    .header-wrapper{
+      display:flex;
+      justify-content: space-between;
+    }
+    .title{
+      a{
+
+      }
+    }
+  }
+  .products-slider{
+    .owl-dots{
+      .owl-dot{
+        border-radius: 50%;
+        box-shadow: none !important;
+      }
+    }
+  }
+}

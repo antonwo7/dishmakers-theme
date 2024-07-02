@@ -1,0 +1,37 @@
+.cart-tabs{
+  width:100%;
+  display:inline-block;
+
+  .tabs-headers{
+    display:flex;
+    width:100%;
+    .tabs-header{
+      cursor:pointer;
+      font-size:18px;
+      padding:10px 20px;
+      background: #efefef;
+      color:#5e1691;
+      border-radius: 6px;
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+      &.active{
+        display:block;
+        background: #5e1691;
+        color:#fff;
+      }
+    }
+
+  }
+  .tabs-blocks{
+    background: #efefef;
+    position: relative;
+    .tabs-block{
+      opacity:0;
+      height:0;
+      &.active{
+        opacity:1;
+        height:auto;
+      }
+    }
+  }
+}

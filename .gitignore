@@ -1,0 +1,9 @@
+# Ignore everything in this directory
+/node_modules
+/production
+/.idea
+*.sublime-project
+*.sublime-workspace
+config-gulp.js
+# Except this file
+!.gitignore

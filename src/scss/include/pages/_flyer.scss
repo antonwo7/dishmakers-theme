@@ -1,0 +1,323 @@
+.step-flyer{
+  h2{
+    margin-bottom: 35px !important;
+  }
+  #flyer-review{
+    border: 2px solid #807e81 !important;
+    margin-top:20px;
+  }
+  #flyer-steps{
+    border: 2px solid #807e81 !important;
+    margin-top:20px;
+  }
+}
+
+
+.inner{
+
+  &.flyer {
+    img{
+      border:0 !important;
+    }
+    padding-top:0;
+    display:none;
+    width:100%;
+    flex-wrap: wrap;
+
+
+    .flyer-review{
+      padding-right:30px;
+      width:50%;
+      border-bottom:4px solid #5e1691;
+      padding-bottom:15px;
+
+      @include media-breakpoint-down(lg) {
+        padding-right:20px;
+      }
+      @include media-breakpoint-down(sm) {
+        width:50%;
+      }
+      @include media-breakpoint-down(xs) {
+        width:100%;
+        padding-right:0;
+      }
+      .flyer-description{
+        text-align: left;
+        .product-name{
+          background:#5e1691;
+          color:#fff;
+          padding:20px;
+          text-align: left;
+          margin: -1px 0 0 -1px;
+          @include media-breakpoint-down(lg) {
+          }
+          h3{
+            font-size: 28px;
+            margin-bottom: 0;
+            line-height: 1.2;
+            @include media-breakpoint-down(lg) {
+              font-size: 26px;
+            }
+            @include media-breakpoint-down(md) {
+              font-size: 17px;
+            }
+          }
+          span{
+            font-style: italic;
+            font-size: 17px;
+            line-height: 1.2;
+            @include media-breakpoint-down(lg) {
+              font-size: 16px;
+            }
+            @include media-breakpoint-down(md) {
+              font-size: 14px;
+            }
+          }
+        }
+
+        .vendor-info{
+          margin-left: 10px;
+        }
+
+        .product-terms{
+          margin-top:20px;
+          margin-left: 15px;
+          font-size: 14px;
+          div{
+            text-align: left;
+          }
+          p{
+            line-height: 1.2;
+          }
+          b{
+            color:#5e1691;
+            font-size: 13px;
+            text-transform: uppercase;
+          }
+        }
+        .product-description{
+          margin-top:20px;
+          margin-left: 15px;
+          text-align: left;
+          font-size: 13px;
+        }
+      }
+    }
+    .flyer-image{
+      width:50%;
+      border-bottom:4px solid #5e1691;
+      padding-bottom:0;
+      margin-top: -0.5px;
+
+      @include media-breakpoint-down(sm) {
+        width:50%;
+      }
+      @include media-breakpoint-down(xs) {
+        width:100%;
+        margin-top: 20px;
+        img{
+          height:200px;
+          object-fit: cover;
+          object-position: center;
+          width:100%;
+        }
+      }
+    }
+    .flyer-ingredients{
+      margin-top:30px;
+      width:100%;
+      text-align: left;
+      padding:0 15px;
+
+      .ingredients-title{
+        color:#5e1691;
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom:20px;
+      }
+      ul{
+        display:flex;
+        padding:0;
+        list-style: none;
+        margin:0 -20px;
+        flex-wrap: wrap;
+        li{
+          width:16.6666%;
+          padding:0 20px 20px;
+          text-align: center !important;
+          @include media-breakpoint-down(md) {
+            width:20%;
+          }
+          @include media-breakpoint-down(sm) {
+            width:25%;
+          }
+          p{
+            text-align: center !important;
+            font-weight: bold;
+            text-transform: uppercase;
+          }
+          img{
+            max-width: 100%;
+            margin-bottom: 7px;
+          }
+          span{
+            display:block;
+          }
+        }
+      }
+    }
+
+
+    &.steps{
+      padding-top:20px;
+      .steps-wrapper{
+        margin-left:15px;
+        min-height: 100px;
+        width:100%;
+      }
+      .ingredients-title{
+        color:#5e1691;
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom:20px;
+
+      }
+      ul{
+        list-style: none;
+        padding:0;
+        li{
+          padding-left:30px;
+          position:relative;
+          margin-bottom:20px;
+          font-size: 14px;
+          min-height: 20px;
+
+          &:before{
+            content:'1';
+            color:#fff;
+            text-align: center;
+            border-radius:50%;
+            width:20px;
+            height:20px;
+            left:0;
+            position:absolute;
+            line-height: 20px;
+            background:#5e1691;
+            display:inline-block;
+            font-size: 12px;
+          }
+          b{
+            color:#5e1691;
+            display:block;
+            line-height: 20px;
+            //margin-bottom:7px;
+          }
+
+          @for $i from 1 through 20 {
+            &:nth-child(#{$i}){
+              &:before{
+                content:'#{$i}';
+              }
+            }
+          }
+        }
+      }
+    }
+    &.active{
+      display:flex;
+    }
+
+    //.flyer-footer{
+    //  margin:30px 20px 0 20px;
+    //  background: #5e1691;
+    //  position:absolute;
+    //  bottom:0;
+    //  left:0;
+    //}
+    //.flyer-footer.second-footer{
+    //  bottom:0;
+    //}
+    //.flyer-footer .logo{
+    //  width:200px;
+    //}
+    //.flyer-footer .logo img{
+    //  width:100%;
+    //}
+  }
+
+  .flyer-footer{
+    padding:10px;
+    width:calc(100% + 1px);
+    margin:30px -1px -1px -1px;
+    background: #5e1691;
+
+    .logo{
+      width:200px;
+      max-width: 200px;
+      img{
+        width:100%;
+      }
+    }
+  }
+
+  .flyer-footer .logo {
+    max-width: 200px;
+    padding:5px;
+    margin: 0 auto;
+  }
+  .flyer-footer .text {
+    height: 100%;
+    float:right;
+    color:#fff;
+    width:400px;
+    line-height: 1.2;
+    padding-left: 40px;
+    display:flex;
+
+  }
+  .flyer-footer .text div{
+    padding-left:3px;
+    align-self: center;
+    font-size:12px;
+    text-align: left;
+  }
+  .flyer-footer .text img{
+    margin-right:10px;
+    float:left;
+    width:20px;
+    align-self: center;
+  }
+
+}
+
+
+.flyers-select{
+  display:flex;
+  position: absolute;
+  right:20px;
+
+  a{
+    background:#eceef2;
+    color:#5e1691;
+    font-size:14px;
+    font-weight: bold;
+    padding:0 20px;
+    line-height: 40px;
+    display:inline-block;
+    &.active, &:hover{
+      background: #5e1691;
+      color:#fff;
+    }
+    &:hover{
+      text-decoration: none;
+    }
+    &:first-child{
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+    }
+    &:last-child{
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+    }
+  }
+}

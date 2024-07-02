@@ -1,0 +1,240 @@
+.right_side_full{
+  max-width: 1140px !important;
+  padding:0 !important;
+  float:none !important;
+  width:100% !important;
+  margin:0 auto;
+}
+#tabsWithStyle{
+  background: #fff;
+
+  @media screen and (min-width: 1025px){
+    margin-top: 30px;
+  }
+  @media screen and (max-width: 627px){
+    margin-top: 0;
+  }
+  @media screen and (max-width: 480px){
+    padding-top: 10px;
+  }
+  @media screen and (max-width: 376px){
+
+    padding-top: 20px;
+  }
+}
+#wcfmmp-store{
+  margin-top:70px !important;
+  .header_wrapper{
+    @media screen and (max-width: 480px){
+      background:#fff;
+    }
+  }
+  .wcfm_store_title{
+    @media screen and (max-width: 1024px){
+      background: #777;
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 4px;
+    }
+    @media screen and (max-width: 480px){
+      font-size: 16px !important;
+    }
+  }
+  .logo_area{
+    top: -170px !important;
+    @media screen and (max-width: 1024px){
+      top: -35px !important;
+      left:20px;
+    }
+    @media screen and (max-width: 480px){
+      float: left !important;
+      top: 20px !important;
+    }
+  }
+  .header_area{
+    @media screen and (max-width: 480px){
+      height:120px;
+    }
+    @media screen and (max-width: 1023px){
+      min-height:70px;
+    }
+  }
+  .social_area {
+    background: rgba(0,0,0,0.4) !important;
+    border-radius: 5px;
+    position: absolute !important;
+    right: 0;
+    bottom: 0;
+    @media screen and (max-width: 1024px){
+      position: relative !important;
+      width: auto !important;
+      margin: 0 0 30px 0 !important;
+    }
+    @media screen and (max-width: 627px){
+      margin: 0 0 0px 0 !important;
+    }
+    @media screen and (max-width: 480px){
+      top: 80px !important;
+      left: 125px;
+      position:absolute !important;
+    }
+    @media screen and (max-width: 376px){
+      //display:none;
+    }
+    ul{
+      @media screen and (max-width: 480px){
+        display: flex;
+        //flex-direction: column;
+      }
+      li{
+        @media screen and (max-width: 480px){
+          margin-bottom: 10px !important;
+        }
+        a{
+          i{
+            @media screen and (max-width: 627px){
+              font-size: 16px !important;
+            }
+            @media screen and (max-width: 480px){
+              font-size: 16px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+  .header_left{
+    position: absolute !important;
+    @media screen and (max-width: 1024px){
+      padding: 0 !important;
+    }
+  }
+  .header_right{
+    @media screen and (max-width: 627px){
+      height:90px;
+    }
+    @media screen and (max-width: 480px){
+      height:120px;
+      background: #fff !important;
+    }
+    @media screen and (max-width: 376px){
+      height:70px;
+    }
+  }
+  #wcfm_store_header{
+    min-height: 0 !important;
+    background: none !important;
+    @media screen and (max-width: 1024px){
+      background: #fff!important;
+    }
+  }
+
+  .right_side{
+    padding: 0% 0% 0 0% !important;
+  }
+
+  ul.products{
+    margin:0 -15px;
+  }
+  .logo_area_after{
+    top: -45px !important;
+    left: 140px !important;
+    padding-left: 36px;
+    @media screen and (max-width: 1024px){
+      padding-left: 0;
+      left: 130px !important;
+      top:40px !important;
+    }
+    @media screen and (max-width: 480px){
+      top: 55px !important;
+    }
+  }
+  .address {
+    margin-left: 36px;
+    top: -65px !important;
+    left: 140px !important;
+    width: auto !important;
+    padding: 5px 10px !important;
+    border-radius:4px;
+    white-space: nowrap;
+    h1{
+      margin:0;
+    }
+    @media screen and (min-width: 1025px){
+      background: rgba(0, 0, 0, 0.4) !important;
+    }
+    @media screen and (max-width: 1024px){
+      width: auto !important;
+      left:20px !important;
+      top:5px !important;
+      position: relative !important;
+      padding-left: 10px !important;
+      margin-left: 10px !important;
+    }
+    @media screen and (max-width: 480px){
+      top: 15px !important;
+    }
+  }
+  .tab_area .tab_links li.active{
+    background-color: #fff !important;
+  }
+  .tab_area .tab_links{
+    margin-bottom: 30px !important;
+    @media screen and (max-width: 480px){
+      display:flex;
+    }
+    li{
+      a{
+        @media screen and (max-width: 480px){
+          font-size: 11px !important;
+        }
+      }
+    }
+  }
+
+  .banner_video{
+    background: #fff;
+    iframe{
+      top:0 !important;
+    }
+  }
+  .banner_area{
+    background: #fff;
+    @media screen and (max-width: 992px){
+      height:auto !important;
+    }
+  }
+}
+.wcfmmp-store-rating{
+  margin-left: 0 !important;
+}
+
+form.woocommerce-ordering{
+  display:none;
+}
+
+.tab_area{
+  background: #fff;
+}
+
+.elementor-section{
+  max-width: 100% !important;
+}
+
+@media screen and (max-width: 1200px){
+  .wrapper {
+    width: 100% !important;
+  }
+}
+
+.elementor-column-wrap{
+  margin:0 !important;
+}
+
+.woocommerce.archive .main {
+  background-color: #fff !important;
+}
+
+body{
+
+}
